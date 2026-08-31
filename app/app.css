@@ -5,11 +5,78 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+:root {
+  --primary-color: white;
+  --main-padding: 10px;
+  --light-padding: 5px;
+}
+
+
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  background-color: var(--primary-color);
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+  /* Header styles */
+  #header{ /* Desktop layout */
+    background-color: var(--primary-color);
+    max-height: 10vh;
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+
+    #logo_hold{
+      /* Logo styles */
+      img{
+        max-height: 10vh;
+        padding-left: var(--main-padding);
+      }
+    }
+
+    /* Nav block styles */
+    #nav_hold{
+      grid-column: 3;
+      /* text-align: center; */
+      /* align-items: center; */
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 50% 50%;
+      /* Navigation styles */
+      nav{
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        /* margin-right: auto; */
+        grid-row: 2;
+        grid-column: 1;
+        ul{
+          display: flex;
+          li{
+            padding-left: var(--main-padding);
+          }
+        }
+      }
+      button{
+        grid-row: 1;
+        grid-column: 1;
+        background-color: rgb(74, 74, 217);
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+        margin-top: var(--light-padding);
+        width: 30%;
+        padding: var(--light-padding);
+        margin-left: auto;
+
+        hover{
+          background-color: green;
+        }
+      }
+    }
+  }
+  #home{ /* Desktop layout */
+    #hero{ /* Hero image sizing and crop */
+      height: 40vh;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 }
