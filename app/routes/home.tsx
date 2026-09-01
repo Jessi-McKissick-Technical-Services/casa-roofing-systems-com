@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
 import Header from "~/components/Header";
-import Home_content from "~/components/home_core";
+import Home_content from "~/components/Home_Content";
 
 export function meta({}: Route.MetaArgs) {
   return [
