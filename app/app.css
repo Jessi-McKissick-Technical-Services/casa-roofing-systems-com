@@ -93,7 +93,7 @@ body {
     #bullet_box{ /* key points box styling */
       background-color: color-mix(in srgb, var(--accent-color) 50%, transparent);
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 50% 50%; 
       border-radius: 5px;
       margin: var(--heavy-void);
       padding: var(--main-padding);

@@ -1,6 +1,6 @@
 function Footer(){
     return(
-        <footer id="footer">
+        <footer id="footer"> 
             <div id="contact_tape">
                 {/* TODO: Fill in the placeholders below */}
                 <p id="phone_number">555-555-5555</p>

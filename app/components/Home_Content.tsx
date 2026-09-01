@@ -52,7 +52,7 @@ function Home_content(){
                         <img src="" />
                         <h3>FREE Inspection</h3>
                         <p>Our seasoned professionals assess your roof for leaks, structural damage, and condition.</p>
-                    </div>
+                    </div >
                     <div className="process_step">
                         <img src="" />
                         <h3>Approval</h3>
