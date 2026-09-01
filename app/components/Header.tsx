@@ -1,4 +1,4 @@
-
+import { Link } from "react-router"; // or "react-router" in v7
 function Header(){
     return(
         <header id="header">
@@ -8,9 +8,9 @@ function Header(){
             <div id="nav_hold">
                 <nav>
                     <ul>
-                        <li>HOME</li>
-                        <li>SERVICES</li>
-                        <li>CONTACT</li>
+                        <li><Link to="/">HOME</Link></li>
+                        <li><Link to="/services">SERVICES</Link></li>
+                        <li><a href="">CONTACT</a></li>
                     </ul>
                 </nav>
                 <button id="request_button" onClick={function(){
