@@ -18,6 +18,7 @@
 
 html,
 body {
+  overflow-x: hidden;
   background-color: var(--primary-color);
 
   /* Header styles */
@@ -121,30 +122,60 @@ body {
         grid-row: 2;
       }
     }
-    #service_box{
+    #service_box {
       display: grid;
       grid-template-columns: 30% 70%;
-      #process_box{
-        /* text-align: center; */
-        background-color: var(--tertiary-color);
-        margin: 0px var(--heavy-void) var(--heavy-void) var(--heavy-void);
-        border-radius: 5px;
-        h2{
-          text-align: center;
-          font-size: 2em;
-          font-weight: bolder;
-        }
-        .process_step{
-          margin: var(--main-padding);
+      align-items: stretch; 
+      gap: var(--heavy-void); 
+      margin-bottom: var(--heavy-void);
 
-          h3{
-            font-size: 1.5em;
-            font-weight: bold;
-          }
+    #process_box {
+      background-color: var(--tertiary-color);
+      border-radius: 5px;
+      padding: var(--main-padding); 
+      margin-left: var(--heavy-void);
+      /* height: fit-content; */
+      h2 {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bolder;
+      }
+      .process_step {
+        margin: var(--main-padding);
+
+        h3 {
+          font-size: 1.5em;
+          font-weight: bold;
         }
       }
+  }
+
+  #gallery {
+    display: flex;
+    overflow-x: auto; 
+    overflow-y: hidden;
+    min-height: 0;    
+    height: 60vh;
+
+    img {
+      height: 100%;       
+      width: auto;        
+      object-fit: cover;  
+      flex-shrink: 0;
     }
   }
+
+}
+}
+#FAQ_box{
+  padding: 0px var(--heavy-void) var(--heavy-void) var(--heavy-void);
+  .FAQ_item{
+    h3{
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
+}
   #footer{
     background-color: var(--secondary-color);
     padding: var(--main-padding);

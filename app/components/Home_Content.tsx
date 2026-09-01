@@ -47,7 +47,6 @@ function Home_content(){
             <div id="service_box">
                 <div id="process_box">
                     <h2>The process</h2>
-                    {/* TODO: Insert the info on their process. borrow from modernroofing.net */}
                     <div className="process_step">
                         <img src="" />
                         <h3>FREE Inspection</h3>
@@ -70,7 +69,14 @@ function Home_content(){
                     </div>
                 </div>
                 <div id="gallery">
-                    {/* A scrolling gallery */}
+                    {/* TODO: Add click and drag to scroll during programming phase */}
+                    <img src="./app/assets/upscaled/roofing1.png"></img>
+                    <img src="./app/assets/upscaled/roofing2.png"></img>
+                    <img src="./app/assets/upscaled/roofing3.png"></img>
+                    <img src="./app/assets/upscaled/roofing4.png"></img>
+                    <img src="./app/assets/upscaled/roofing5.png"></img>
+                    <img src="./app/assets/upscaled/roofing6.png"></img>
+                    <img src="./app/assets/upscaled/roofing7.png"></img>
                 </div>
             </div>
             <div id="FAQ_box">
