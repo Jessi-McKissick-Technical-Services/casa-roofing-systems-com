@@ -12,12 +12,12 @@ function Header(){
                     <ul>
                         <li><Link to="/">HOME</Link></li>
                         <li><Link to="/services">SERVICES</Link></li>
-                        <li><a href="">CONTACT</a></li>
+                        <li><Link to="/contact">CONTACT</Link></li>
                     </ul>
                 </nav>
-                <button id="request_button" onClick={function(){
+                {/* <button id="request_button" onClick={function(){
 
-                }}>GET IN TOUCH!</button>
+                }}>GET IN TOUCH!</button> */}
             </div>
         </header>
     )

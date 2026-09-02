@@ -1,6 +1,4 @@
 import type { Route } from "./+types/home";
-import Header from "~/components/Header";
-import Footer from "~/components/footer";
 import services from "../../JSON_data/services.json";
 
 export function meta({}: Route.MetaArgs) {
