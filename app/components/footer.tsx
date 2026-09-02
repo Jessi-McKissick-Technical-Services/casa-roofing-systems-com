@@ -1,4 +1,4 @@
-import footer from "../../../JSON_data/footer.json";
+import footer from "../../JSON_data/footer.json";
 
 function Footer(){
     return(

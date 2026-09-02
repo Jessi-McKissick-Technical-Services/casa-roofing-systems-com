@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import home from "../../../JSON_data/home.json";
+import home from "../../JSON_data/home.json";
 
 export function meta({}: Route.MetaArgs) {
   return [
