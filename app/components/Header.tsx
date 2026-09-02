@@ -3,7 +3,7 @@ function Header(){
     return(
         <header id="header">
             <div id="logo_hold">
-                <img src="./app/assets/CasaRoofingSystems_logo.png" />
+                <img src="./assets/CasaRoofingSystems_logo.png" />
             </div>
             <div id="nav_hold">
                 <nav>
