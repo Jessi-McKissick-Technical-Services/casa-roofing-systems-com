@@ -167,6 +167,71 @@ body {
 
 }
 }
+  #services{
+    #service_heroes{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      #shingled_roofing{
+        background-image: url('./assets/upscaled/roofing3.png');
+        background-size: cover;
+        background-position: center;
+      }
+      #metal_roofing{
+        background-image: url(./assets/upscaled/Tiles.png);
+        background-size: cover;
+        background-position: center;
+        }
+      #flat_roofing{
+        background-image: url(./assets/upscaled/roofing4.png);
+        background-size: cover;
+        background-position: center;
+      }
+      #tile_roofing{
+        background-image: url(./assets/upscaled/Outpost\ Drive\ LA.png);
+        background-size: cover;
+        background-position: center;
+      }
+      .service_hero{
+        height: 45vh;
+        display: grid;
+        grid-template-rows: 80% 10% 10%;
+        align-items: start;
+        text-align: left;
+        h3{
+          grid-row: 2;
+          /* text-align: center; */
+          font-size: 2em;
+          padding-left: var(--main-padding);
+          background-color: var(--accent-color);
+          max-width: 10vw;
+          text-align: center;
+          border-top-right-radius: 5px;
+        }
+        button{
+          grid-row: 3;
+          background-color: var(--primary-color);
+          max-width: 15vw;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+      }
+    }
+    #service_spiels{
+      .service_info_plate{
+        background-color: var(--accent-color);
+        margin: var(--main-padding);
+        padding: var(--main-padding);
+        border-radius: 5px;
+        h2{
+          font-size: 2em;
+        }
+        p{
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
 #FAQ_box{
   padding: 0px var(--heavy-void) var(--heavy-void) var(--heavy-void);
   .FAQ_item{

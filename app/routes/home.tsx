@@ -1,6 +1,5 @@
 import type { Route } from "./+types/home";
-import Header from "~/components/Header";
-import Footer from "~/components/footer";
+import home from "../../../JSON_data/home.json";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -14,15 +13,15 @@ export default function Home() {
     <div id="home">
       <img src="./app/assets/upscaled/IMG_1895.png" id="hero"></img>
       <div id="sizzle_tape">
-          <h2>We serve the greater LA area!</h2>
+          <h2>{home.Hero_Banner}</h2>
       </div>
       <div id="bullet_box">
           <div id="point_1" className="selling_point">
               <img src="https://placehold.co/400x400" className="point_image" />
               <div>
-                  <h3 className="point_title">Lorem</h3>
+                  <h3 className="point_title">{home.point_1_title}</h3>
                   <p className="point_info">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      {home.point_1_content}
                   </p>
               </div>
 
@@ -30,27 +29,27 @@ export default function Home() {
           <div id="point_2" className="selling_point">
               <img src="https://placehold.co/400x400" className="point_image" />
               <div>
-                  <h3 className="point_title">Ipsum</h3>
+                  <h3 className="point_title">{home.point_2_title}</h3>
                   <p className="point_info">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      {home.point_2_content}
                   </p>
               </div>
           </div>
           <div id="point_3" className="selling_point">
               <img src="https://placehold.co/400x400" className="point_image" />
               <div>
-                  <h3 className="point_title">Dolor</h3>
+                  <h3 className="point_title">{home.point_3_title}</h3>
                   <p className="point_info">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      {home.point_3_content}
                   </p>
               </div>
           </div>
           <div id="point_4" className="selling_point">
               <img src="https://placehold.co/400x400" className="point_image" />
               <div>
-                  <h3 className="point_title">Sit amet</h3>
+                  <h3 className="point_title">{home.point_4_title}</h3>
                   <p className="point_info">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      {home.point_4_content}
                   </p>
               </div>
           </div>
@@ -92,24 +91,25 @@ export default function Home() {
       </div>
       <div id="FAQ_box">
           <div className="FAQ_item">
-              <h3>What makes cleaning and protecting my roof so important?</h3>
-              <p>By keeping your roof clean and protected you are helping to ensure its longevity, 
-                  prevent costly repairs, and maintains its efficacy.
-              </p>
+              <h3>{home.FAQ_1_title}</h3>
+              <p>{home.FAQ_1_content}</p>
           </div>
           <div className="FAQ_item">
-              <h3>Lorem Ipsum Dolor</h3>
-              <p>Lorem ipsum dolor sit amet, etc etc.</p>
+              <h3>{home.FAQ_2_title}</h3>
+              <p>{home.FAQ_2_content}</p>
           </div>
           <div className="FAQ_item">
-              <h3>Lorem Ipsum Dolor</h3>
-              <p>Lorem ipsum dolor sit amet, etc etc.</p>
+              <h3>{home.FAQ_3_title}</h3>
+              <p>{home.FAQ_3_content}</p>
           </div>
           <div className="FAQ_item">
-              <h3>Lorem Ipsum Dolor</h3>
-              <p>Lorem ipsum dolor sit amet, etc etc.</p>
+              <h3>{home.FAQ_4_title}</h3>
+              <p>{home.FAQ_4_content}</p>
           </div>
-          {/* TODO: a set of FAQs. */}
+          <div className="FAQ_item">
+              <h3>{home.FAQ_5_title}</h3>
+              <p>{home.FAQ_5_content}</p>
+          </div>
       </div>
     </div>
   );
