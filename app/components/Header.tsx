@@ -1,9 +1,11 @@
 import { Link } from "react-router"; // or "react-router" in v7
+import logo from '../assets/CasaRoofingSystems_logo.png';
+
 function Header(){
     return(
         <header id="header">
             <div id="logo_hold">
-                <img src="./assets/CasaRoofingSystems_logo.png" />
+                <img src={logo} />
             </div>
             <div id="nav_hold">
                 <nav>

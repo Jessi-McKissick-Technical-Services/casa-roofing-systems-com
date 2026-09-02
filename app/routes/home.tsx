@@ -1,5 +1,13 @@
 import type { Route } from "./+types/home";
 import home from "../../JSON_data/home.json";
+import img_1895 from "../assets/upscaled/IMG_1895.png";
+import roofing_1 from "../assets/upscaled/roofing1.png";
+import roofing_2 from "../assets/upscaled/roofing2.png";
+import roofing_3 from "../assets/upscaled/roofing3.png";
+import roofing_4 from "../assets/upscaled/roofing4.png";
+import roofing_5 from "../assets/upscaled/roofing5.png";
+import roofing_6 from "../assets/upscaled/roofing6.png";
+import roofing_7 from "../assets/upscaled/roofing7.png";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -11,7 +19,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <div id="home">
-      <img src="./app/assets/upscaled/IMG_1895.png" id="hero"></img>
+      <img src={img_1895} id="hero"></img>
       <div id="sizzle_tape">
           <h2>{home.Hero_Banner}</h2>
       </div>
@@ -80,13 +88,13 @@ export default function Home() {
           </div>
           <div id="gallery">
               {/* TODO: Add click and drag to scroll during programming phase */}
-              <img src="./app/assets/upscaled/roofing1.png" className="gallery_item"></img>
-              <img src="./app/assets/upscaled/roofing2.png" className="gallery_item"></img>
-              <img src="./app/assets/upscaled/roofing3.png" className="gallery_item"></img>
-              <img src="./app/assets/upscaled/roofing4.png" className="gallery_item"></img>
-              <img src="./app/assets/upscaled/roofing5.png" className="gallery_item"></img>
-              <img src="./app/assets/upscaled/roofing6.png" className="gallery_item"></img>
-              <img src="./app/assets/upscaled/roofing7.png" className="gallery_item"></img>
+              <img src={roofing_1} className="gallery_item"></img>
+              <img src={roofing_2} className="gallery_item"></img>
+              <img src={roofing_3} className="gallery_item"></img>
+              <img src={roofing_4} className="gallery_item"></img>
+              <img src={roofing_5} className="gallery_item"></img>
+              <img src={roofing_6} className="gallery_item"></img>
+              <img src={roofing_7} className="gallery_item"></img>
           </div>
       </div>
       <div id="FAQ_box">
