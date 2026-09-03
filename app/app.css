@@ -295,3 +295,66 @@ body {
     }
   }
 }
+
+/* Layout modifications for smaller screens */
+@media screen and (max-width: 1000px) {
+  body{
+    display: inline;
+    #header{
+      height: 25vh;
+      display: inline !important;
+      #logo_hold{
+        width: 100%;
+        img{
+          width: 100% !important;
+        }
+      }
+      #nav_hold{
+        display: inline;
+        align-items: center;
+        text-align: center;
+        nav{
+
+        }
+        ul{
+          display: grid !important;
+          grid-template-columns: 33.33% 33.33% 33.33% !important;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          align-items: center;
+        }
+      }
+    }
+    
+    #bullet_box{
+      display: inline !important;
+    }
+    #service_box{
+      display: inline !important;
+      #process_box{
+        margin: 0px !important;
+        width: 100%;
+        border-bottom-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+      }
+    }
+    #service_heroes{
+      display: inline !important;
+      h3{
+        max-width: 100% !important;
+        opacity: 75%;
+      }
+    }
+    #contact_plate{
+      display: inline !important;
+    }
+
+
+
+    #contact_tape{
+      display: inline !important;
+    }
+
+  }
+}
