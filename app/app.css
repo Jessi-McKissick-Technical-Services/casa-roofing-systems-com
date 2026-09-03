@@ -329,6 +329,10 @@ body {
     
     #bullet_box{
       display: inline !important;
+      margin: 0px !important;
+      width: 100vw !important;
+      height: auto; 
+      background-color: rgba(250, 128, 114, 0) !important;
     }
     #service_box{
       display: inline !important;
@@ -350,7 +354,11 @@ body {
       }
     }
     #contact_plate{
+      background-color: rgba(0, 0, 0, 0) !important;
       display: inline !important;
+    }
+    #contact iframe{
+      border-radius: 0px !important;
     }
 
 
