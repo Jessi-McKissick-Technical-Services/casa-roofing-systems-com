@@ -135,6 +135,7 @@ body {
       border-radius: 5px;
       padding: var(--main-padding); 
       margin-left: var(--heavy-void);
+      color: white;
       /* height: fit-content; */
       h2 {
         text-align: center;

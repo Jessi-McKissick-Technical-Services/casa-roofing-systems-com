@@ -13,7 +13,7 @@ export default function Services() {
     <div id="services">
         <div id="service_heroes">
             <div className="service_hero" id="shingled_roofing">
-                <h3>Shingled</h3>
+                <h3>Shingle</h3>
                 <button onClick={function(){
 
                 }}>Read More</button>
@@ -33,7 +33,7 @@ export default function Services() {
                 }}>Read More</button>
             </div>
             <div className="service_hero" id="tile_roofing">
-                <h3>Tiled</h3>
+                <h3>Tile</h3>
                 <button onClick={function(){
 
                 }}>Read More</button>
@@ -41,7 +41,7 @@ export default function Services() {
         </div>
         <div id="service_spiels">
             <div className="service_info_plate">
-                <h2>Shingled Roofing</h2>
+                <h2>Shingle Roofing</h2>
                 <p>{services.shingled}</p>
             </div>
             <div className="service_info_plate">
@@ -53,7 +53,7 @@ export default function Services() {
                 <p>{services.flat}</p>
             </div>
             <div className="service_info_plate">
-                <h2>Tiled Roofing</h2>
+                <h2>Tiles Roofing</h2>
                 <p>{services.tiled}</p>
             </div>
         </div>
