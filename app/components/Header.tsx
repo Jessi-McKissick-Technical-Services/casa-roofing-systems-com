@@ -5,7 +5,7 @@ function Header(){
     return(
         <header id="header">
             <div id="logo_hold">
-                <img src={logo} />
+                <img src={logo} alt="Casa Roofing Systems Logo" />
             </div>
             <div id="nav_hold">
                 <nav>

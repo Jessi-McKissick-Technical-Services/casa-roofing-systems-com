@@ -15,27 +15,15 @@ export default function Services() {
         <div id="service_heroes">
             <div className="service_hero" id="shingled_roofing">
                 <h3>Shingle</h3>
-                <button onClick={function(){
-
-                }}>Read More</button>
             </div>
             <div className="service_hero" id="metal_roofing">
                 <h3>Metal</h3>
-                <button onClick={function(){
-
-                }}>Read More</button>
             </div>
             <div className="service_hero" id="flat_roofing">
                 <h3>Flat</h3>
-                <button onClick={function(){
-
-                }}>Read More</button>
             </div>
             <div className="service_hero" id="tile_roofing">
                 <h3>Tile</h3>
-                <button onClick={function(){
-
-                }}>Read More</button>
             </div>
         </div>
         <div id="service_spiels">

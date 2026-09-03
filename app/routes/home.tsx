@@ -19,13 +19,13 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <div id="home">
-      <img src={img_1895} id="hero"></img>
+      <img src={img_1895} id="hero" alt="Image of a high quality shingle roof."></img>
       <div id="sizzle_tape">
           <h2>{home.Hero_Banner}</h2>
       </div>
       <div id="bullet_box">
           <div id="point_1" className="selling_point">
-              <img src="https://placehold.co/400x400" className="point_image" />
+              <img src="https://placehold.co/400x400" className="point_image" alt="Point image 1" />
               <div>
                   <h3 className="point_title">{home.point_1_title}</h3>
                   <p className="point_info">
@@ -35,7 +35,7 @@ export default function Home() {
 
           </div>
           <div id="point_2" className="selling_point">
-              <img src="https://placehold.co/400x400" className="point_image" />
+              <img src="https://placehold.co/400x400" className="point_image" alt="Point image 2"/>
               <div>
                   <h3 className="point_title">{home.point_2_title}</h3>
                   <p className="point_info">
@@ -44,7 +44,7 @@ export default function Home() {
               </div>
           </div>
           <div id="point_3" className="selling_point">
-              <img src="https://placehold.co/400x400" className="point_image" />
+              <img src="https://placehold.co/400x400" className="point_image" alt="Point image 3"/>
               <div>
                   <h3 className="point_title">{home.point_3_title}</h3>
                   <p className="point_info">
@@ -53,7 +53,7 @@ export default function Home() {
               </div>
           </div>
           <div id="point_4" className="selling_point">
-              <img src="https://placehold.co/400x400" className="point_image" />
+              <img src="https://placehold.co/400x400" className="point_image" alt="Point image 4"/>
               <div>
                   <h3 className="point_title">{home.point_4_title}</h3>
                   <p className="point_info">
@@ -66,35 +66,35 @@ export default function Home() {
           <div id="process_box">
               <h2>The process</h2>
               <div className="process_step">
-                  <img src="" />
+                  <img src="" alt="Inspection icon"/>
                   <h3>FREE Inspection</h3>
                   <p>Our seasoned professionals assess your roof for leaks, structural damage, and condition.</p>
               </div >
               <div className="process_step">
-                  <img src="" />
+                  <img src="" alt="Client approval icon" />
                   <h3>Approval</h3>
                   <p>Once approved, we handle the rest. Permits, scheduling, and process.</p>
               </div>
               <div className="process_step">
-                  <img src="" />
+                  <img src="" alt="Installation icon" />
                   <h3>Install</h3>
                   <p>We safely remove the old roofing, inspect decking, and install your brand new roof with expert precision and care.</p>
               </div>
               <div className="process_step">
-                  <img src="" />
+                  <img src="" alt="Final inspection logo" />
                   <h3>Final inspection</h3>
                   <p>We perform final checks to ensure quality and finish, and provide you with a warranty just in case.</p>
               </div>
           </div>
           <div id="gallery">
               {/* TODO: Add click and drag to scroll during programming phase */}
-              <img src={roofing_1} className="gallery_item"></img>
-              <img src={roofing_2} className="gallery_item"></img>
-              <img src={roofing_3} className="gallery_item"></img>
-              <img src={roofing_4} className="gallery_item"></img>
-              <img src={roofing_5} className="gallery_item"></img>
-              <img src={roofing_6} className="gallery_item"></img>
-              <img src={roofing_7} className="gallery_item"></img>
+              <img src={roofing_1} className="gallery_item" alt="Gallery image of prior work."></img>
+              <img src={roofing_2} className="gallery_item" alt="Gallery image of prior work."></img>
+              <img src={roofing_3} className="gallery_item" alt="Gallery image of prior work."></img>
+              <img src={roofing_4} className="gallery_item" alt="Gallery image of prior work."></img>
+              <img src={roofing_5} className="gallery_item" alt="Gallery image of prior work."></img>
+              <img src={roofing_6} className="gallery_item" alt="Gallery image of prior work."></img>
+              <img src={roofing_7} className="gallery_item" alt="Gallery image of prior work."></img>
           </div>
       </div>
       <div id="FAQ_box">

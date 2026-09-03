@@ -12,7 +12,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Contact() {
   return (
     <div id="contact">
-      <img src={roofing7}></img>
+      <img src={roofing7} alt="Image of a work crew working on a tiled roof."></img>
       <p id="spiel">{contact_data.spiel}</p>
       <div id="contact_plate">
         <p id="phone_num"><b>Phone:</b> <b></b>{contact_data.contact_phone}</p>
