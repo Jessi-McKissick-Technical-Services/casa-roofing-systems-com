@@ -10,6 +10,7 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Services() {
   return (
+    // TODO: add click to jump functionality to the service plates
     <div id="services">
         <div id="service_heroes">
             <div className="service_hero" id="shingled_roofing">
@@ -18,8 +19,6 @@ export default function Services() {
 
                 }}>Read More</button>
             </div>
-                        {/* TODO: Change metal_roofing bg img to a metal roof. none are in the asset batch */}
-
             <div className="service_hero" id="metal_roofing">
                 <h3>Metal</h3>
                 <button onClick={function(){

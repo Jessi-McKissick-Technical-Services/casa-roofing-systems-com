@@ -19,7 +19,7 @@ export default function Contact() {
         <p id="email_addr"><b>Email:</b> {contact_data.contact_email}</p>
         <p id="address_cont"><b>Address:</b> {contact_data.address}</p>
       </div>
-      <p id="CTA">contact us today for your FREE quote!</p>
+      <p id="CTA">Contact us today for your FREE quote!</p>
       <iframe src={contact_data.map_embed} width="600" height="450" loading="lazy"></iframe>
 
     </div>
