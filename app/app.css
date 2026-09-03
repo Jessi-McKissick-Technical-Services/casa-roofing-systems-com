@@ -129,7 +129,6 @@ body {
       align-items: stretch; 
       gap: var(--heavy-void); 
       margin-bottom: var(--heavy-void);
-
     #process_box {
       background-color: var(--tertiary-color);
       border-radius: 5px;
@@ -142,12 +141,21 @@ body {
         font-size: 2em;
         font-weight: bolder;
       }
+      img{
+        max-width: 4vw;
+      }
       .process_step {
         margin: var(--main-padding);
+        display: grid;
+        grid-template-columns: 20% 80%;
 
         h3 {
           font-size: 1.5em;
           font-weight: bold;
+        }
+        p{
+          grid-column-start: 1;
+          grid-column-end: 3;
         }
       }
   }
@@ -341,6 +349,15 @@ body {
         width: 100%;
         border-bottom-right-radius: 0px !important;
         border-bottom-left-radius: 0px !important;
+        .process_step{
+          display: inline !important;
+          img{
+            max-width: 20% !important;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
       }
     }
     #FAQ_box{

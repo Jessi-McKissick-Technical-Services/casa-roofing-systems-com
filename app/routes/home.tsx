@@ -8,6 +8,11 @@ import roofing_4 from "../assets/upscaled/roofing4.png";
 import roofing_5 from "../assets/upscaled/roofing5.png";
 import roofing_6 from "../assets/upscaled/roofing6.png";
 import roofing_7 from "../assets/upscaled/roofing7.png";
+import inspection_icon from "../assets/icons/magnifying-glass-solid-full.svg";
+import approval_icon from "../assets/icons/handshake-regular-full.svg";
+import install_icon from "../assets/icons/helmet-safety-solid-full.svg";
+import final_icon from "../assets/icons/clipboard-regular-full.svg";
+
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -66,22 +71,22 @@ export default function Home() {
           <div id="process_box">
               <h2>The process</h2>
               <div className="process_step">
-                  <img src="" alt="Inspection icon"/>
+                  <img src={inspection_icon} alt="Inspection icon"/>
                   <h3>FREE Inspection</h3>
                   <p>Our seasoned professionals assess your roof for leaks, structural damage, and condition.</p>
               </div >
               <div className="process_step">
-                  <img src="" alt="Client approval icon" />
+                  <img src={approval_icon} alt="Client approval icon" />
                   <h3>Approval</h3>
                   <p>Once approved, we handle the rest. Permits, scheduling, and process.</p>
               </div>
               <div className="process_step">
-                  <img src="" alt="Installation icon" />
+                  <img src={install_icon} alt="Installation icon" />
                   <h3>Install</h3>
                   <p>We safely remove the old roofing, inspect decking, and install your brand new roof with expert precision and care.</p>
               </div>
               <div className="process_step">
-                  <img src="" alt="Final inspection logo" />
+                  <img src={final_icon} alt="Final inspection logo" />
                   <h3>Final inspection</h3>
                   <p>We perform final checks to ensure quality and finish, and provide you with a warranty just in case.</p>
               </div>
