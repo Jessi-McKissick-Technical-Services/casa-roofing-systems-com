@@ -339,6 +339,9 @@ body {
         border-bottom-left-radius: 0px !important;
       }
     }
+    #FAQ_box{
+      margin-top: var(--heavy-void) !important;
+    }
     #service_heroes{
       display: inline !important;
       h3{
